@@ -305,6 +305,20 @@ public class App {
 //
 //            public abstract int action();
 //            public abstract boolean isThis();
+//
+//            public List<String> getNames() {
+//                return names;
+//            }
+//
+//            public void setNames(List<String> names) {
+//                this.names = names;
+//            }
+//
+//            public void addName(String name) {
+//                this.names.add(name);
+//            }
+//
+//            public boolean is(String name);
 //        }
 //
 //        public static class CommandHelp extends Command {

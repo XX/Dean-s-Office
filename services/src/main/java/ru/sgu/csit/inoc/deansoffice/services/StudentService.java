@@ -2,6 +2,8 @@ package ru.sgu.csit.inoc.deansoffice.services;
 
 import ru.sgu.csit.inoc.deansoffice.domain.Student;
 
+import java.util.List;
+
 /**
  * .
  * User: hd (KhurtinDN(a)gmail.com)
@@ -10,4 +12,5 @@ import ru.sgu.csit.inoc.deansoffice.domain.Student;
  */
 public interface StudentService {
     boolean equalsFullName(Student student1, Student student2);
+    void sortByFullName(List<Student> students);
 }
