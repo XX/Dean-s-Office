@@ -76,6 +76,7 @@ public class EnRegister {
                 break;
             }
         }
+        students.clear();
     }
 
     public EnrollmentOrder getCurrentOrder() {

@@ -116,8 +116,8 @@ public class AddEnOrderMain {
                     register.enterOrderNote(input());
                     print(Mode.UPDATED_ORDER);
                 } else if ("2".equals(command)) {
-                    println("stlist group=XXX,XXX - вывод информации о студентах,");
-                    println("stadd group=XXX,XXX id,id - добавление студентов из группы и по id,");
+                    println("stlist g=XXX,XXX - вывод информации о студентах,");
+                    println("stadd g=XXX,XXX id,id - добавление студентов из группы и по id,");
                     println("stremove id,id - удаление студентов по id.");
 //                    state = 2;
                 } else if (command.startsWith("stlist ")) {
@@ -130,7 +130,7 @@ public class AddEnOrderMain {
                             int assignIndex = str.lastIndexOf("=");
                             String param = str.substring(assignIndex + 1, str.length());
 
-                            if (str.startsWith("group=")) {
+                            if (str.startsWith("g=")) {
                                 Scanner paramScanner = new Scanner(param);
                                 paramScanner.useDelimiter(",");
                                 Pattern paramPattern = Pattern.compile("[0-9]+");
@@ -163,7 +163,7 @@ public class AddEnOrderMain {
                             int assignIndex = str.lastIndexOf("=");
                             String param = str.substring(assignIndex + 1, str.length());
 
-                            if (str.startsWith("group=")) {
+                            if (str.startsWith("g=")) {
                                 Scanner paramScanner = new Scanner(param);
                                 paramScanner.useDelimiter(",");
                                 Pattern paramPattern = Pattern.compile("[0-9]+");

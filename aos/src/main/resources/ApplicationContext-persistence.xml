@@ -10,7 +10,7 @@
     <!-- Configure a DataSource -->
     <bean id="dataSourceForTest" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
         <property name="driverClassName" value="org.postgresql.Driver"/>
-        <property name="url" value="jdbc:postgresql://localhost:5432/deansoffice"/>
+        <property name="url" value="jdbc:postgresql://hidden.sgu.ru:5432/deansoffice"/>
         <property name="username" value="postgres"/>
         <property name="password" value="masterkey"/>
     </bean>
